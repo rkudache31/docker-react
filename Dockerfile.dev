@@ -1,0 +1,5 @@
+FROM node:10-alpine
+WORKDIR /app
+RUN chmod 777 /app
+RUN npm install
+CMD ["npm","run","start"]
